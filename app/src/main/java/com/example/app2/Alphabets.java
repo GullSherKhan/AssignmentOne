@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -13,6 +14,7 @@ public class Alphabets extends AppCompatActivity {
 
     TextView tv;
     ImageButton ib;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,5 +79,144 @@ public class Alphabets extends AppCompatActivity {
         else if(value>=97 && value<122)
             value++;
         tv.setText(String.valueOf(value));
+    }
+
+    public void voice(View view) {
+        char value=tv.getText().toString().charAt(0);
+        if(value>=65&&value<=90)
+            value-=65;
+        else
+            value-=97;
+        if(value==0)
+        {
+            mp=MediaPlayer.create(this,R.raw.a);
+            mp.start();
+        }
+        else if(value==1)
+        {
+            mp=MediaPlayer.create(this,R.raw.b);
+            mp.start();
+        }
+        else if(value==2)
+        {
+            mp=MediaPlayer.create(this,R.raw.c);
+            mp.start();
+        }
+        else if(value==3)
+        {
+            mp=MediaPlayer.create(this,R.raw.d);
+            mp.start();
+        }
+        else  if(value==4)
+        {
+            mp=MediaPlayer.create(this,R.raw.e);
+            mp.start();
+        }
+        else if(value==5)
+        {
+            mp=MediaPlayer.create(this,R.raw.f);
+            mp.start();
+        }
+        else if(value==6)
+        {
+            mp=MediaPlayer.create(this,R.raw.g);
+            mp.start();
+        }
+        else if(value==7)
+        {
+            mp=MediaPlayer.create(this,R.raw.h);
+            mp.start();
+        }
+        else if(value==8)
+        {
+            mp=MediaPlayer.create(this,R.raw.i);
+            mp.start();
+        }
+        else if(value==9)
+        {
+            mp=MediaPlayer.create(this,R.raw.j);
+            mp.start();
+        }
+        else if(value==10)
+        {
+            mp=MediaPlayer.create(this,R.raw.k);
+            mp.start();
+        }
+        else if(value==11)
+        {
+            mp=MediaPlayer.create(this,R.raw.l);
+            mp.start();
+        }
+        else if(value==12)
+        {
+            mp=MediaPlayer.create(this,R.raw.m);
+            mp.start();
+        }
+        else if(value==13)
+        {
+            mp=MediaPlayer.create(this,R.raw.n);
+            mp.start();
+        }
+        else if(value==14)
+        {
+            mp=MediaPlayer.create(this,R.raw.o);
+            mp.start();
+        }
+        else if(value==15)
+        {
+            mp=MediaPlayer.create(this,R.raw.p);
+            mp.start();
+        }
+        else if(value==16)
+        {
+            mp=MediaPlayer.create(this,R.raw.q);
+            mp.start();
+        }
+        else if(value==17)
+        {
+            mp=MediaPlayer.create(this,R.raw.r);
+            mp.start();
+        }
+        else if(value==18)
+        {
+            mp=MediaPlayer.create(this,R.raw.s);
+            mp.start();
+        }
+        else if(value==19)
+        {
+            mp=MediaPlayer.create(this,R.raw.t);
+            mp.start();
+        }
+        else if(value==20)
+        {
+            mp=MediaPlayer.create(this,R.raw.u);
+            mp.start();
+        }
+        else if(value==21)
+        {
+            mp=MediaPlayer.create(this,R.raw.v);
+            mp.start();
+        }
+        else if(value==22)
+        {
+            mp=MediaPlayer.create(this,R.raw.w);
+            mp.start();
+        }
+        else if(value==23)
+        {
+            mp=MediaPlayer.create(this,R.raw.x);
+            mp.start();
+        }
+        else if(value==24)
+        {
+            mp=MediaPlayer.create(this,R.raw.y);
+            mp.start();
+        }
+        else if(value==25)
+        {
+            mp = MediaPlayer.create(this, R.raw.z);
+            mp.start();
+        }
+
     }
 }
